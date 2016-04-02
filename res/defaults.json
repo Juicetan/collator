@@ -1,0 +1,20 @@
+{
+   "DESTINATION_DIR":"./complete",
+   "ROOT_SEARCH_DIR":".",
+   "PATH_EXCLUSIONS":[
+      "./complete",
+    "./TRASH",
+    "./incomplete",
+    "./NZBs",
+   ],
+   "TRASH_DIR":"./TRASH",
+   "FILE_EXTENSIONS":[
+      "mkv",
+      "avi",
+      "mov",
+      "mp4",
+      "mpg",
+      "mpeg",
+    "flv"
+   ]
+}

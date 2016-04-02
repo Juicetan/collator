@@ -1,0 +1,23 @@
+{
+  "name": "collator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Juicetan/collator.git"
+  },
+  "author": "Juicetan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juicetan/collator/issues"
+  },
+  "homepage": "https://github.com/Juicetan/collator",
+  "dependencies": {
+    "command-line-args": "^2.1.6",
+    "lodash": "^4.7.0"
+  }
+}
