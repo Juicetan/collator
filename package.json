@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Juicetan/collator",
   "dependencies": {
-    "command-line-args": "^2.1.6",
+    "commander": "^2.9.0",
     "lodash": "^4.7.0"
   }
 }
