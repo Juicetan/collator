@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Juicetan/collator",
   "dependencies": {
     "commander": "^2.9.0",
+    "fs-utils": "^0.7.0",
     "lodash": "^4.7.0"
   }
 }
