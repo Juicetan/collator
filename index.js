@@ -7,11 +7,26 @@ cmd
   .version('0.0.1')
   .description('An application for collating files into predefined folders')
   .option('-i, --initconfig', 'Initialize custom config file')
+  .option('-p, --filepath [value]','Optional filepath modifier')
   .parse(process.argv);
 
-if(cmd.initconfig){
-  cfgMan.createConfig('.');
-  console.log('> Custom configuration file created');
-} else{
 
-}
+var App = {
+  run: function(){
+    if(cmd.initconfig){
+      var filePath = cmd.filepath?cmd.filepath:'.';
+      cfgMan.createConfig(filePath);
+      console.log('> Custom configuration file created:',filePath);
+      return true;
+    }
+
+    this.initConfig();
+  },
+  initConfig: function(){
+    cfgMan.initConfig();
+
+  }
+};
+
+
+App.run();
