@@ -1,20 +1,15 @@
 {
-   "DESTINATION_DIR":"./complete",
-   "ROOT_SEARCH_DIR":".",
-   "PATH_EXCLUSIONS":[
-      "./complete",
-    "./TRASH",
+  "ROOT_SEARCH_DIR":".",
+  "DESTINATION_DIRS": {
+    "dest": "./completed",
+    "trash": "./trash"
+  },
+  "PATH_EXCLUSIONS": [
     "./incomplete",
-    "./NZBs",
-   ],
-   "TRASH_DIR":"./TRASH",
-   "FILE_EXTENSIONS":[
-      "mkv",
-      "avi",
-      "mov",
-      "mp4",
-      "mpg",
-      "mpeg",
-    "flv"
-   ]
+    "./NZBs"
+  ],
+  "FILTERS": {
+    "dest": "/^(?!.*sample)(.*\\.((htm|html|class|csv|js)$))[^.]*$/ig",
+    "trash": "*"
+  }
 }
