@@ -2,6 +2,7 @@
 
 var cmd = require('commander');
 var cfgMan = require('./lib/utils/configManager');
+var fs = require('fs');
 
 cmd
   .version('0.0.1')
@@ -24,7 +25,17 @@ var App = {
   },
   initConfig: function(){
     cfgMan.initConfig();
+    var filePath = cmd.filepath?cmd.filepath:'.';
+    filePath = filePath.charAt(filePath.length - 1) === '/'?filePath:filePath+'/';
+    var customConfigPath = filePath + cfgMan.cfg.CONFIGNAME;
 
+    fs.stat(customConfigPath,function(err,stat){
+      if(!err){
+        cfgMan.initConfig(customConfigPath);
+      } else if(err.code === "ENOENT"){
+        console.log('> no custom configuration found');
+      }
+    });
   }
 };
 
