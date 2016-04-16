@@ -19,6 +19,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "fs-utils": "^0.7.0",
-    "lodash": "^4.7.0"
+    "lodash": "^4.7.0",
+    "q": "^1.4.1"
   }
 }
