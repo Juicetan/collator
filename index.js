@@ -25,7 +25,12 @@ var App = {
     }
 
     this.initConfig().done(function(){
-      var filePath = cmd.collatepath?cmd.collatepath:'.';
+      var filePath = '.';
+      if(cmd.collatepath){
+        filePath = cmd.collatepath;
+      } else if(cfgMan.ROOT_SEARCH_DIR){
+        filePath = cfgMan.ROOT_SEARCH_DIR;
+      }
       collateMan.run(filePath);
     },function(e){
       throw e;
