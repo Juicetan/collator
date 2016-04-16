@@ -31,6 +31,7 @@ var App = {
 
     fs.stat(customConfigPath,function(err,stat){
       if(!err){
+        console.log('> custom configuration found');
         cfgMan.initConfig(customConfigPath);
       } else if(err.code === "ENOENT"){
         console.log('> no custom configuration found');
