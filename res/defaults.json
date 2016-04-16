@@ -9,7 +9,7 @@
     "./NZBs"
   ],
   "FILTERS": {
-    "dest": "/^(?!.*sample)(.*\\.((htm|html|class|csv|js)$))[^.]*$/ig",
+    "dest": "/^(?!.*sample)(.*\\.((mkv|avi|mp4|mpeg|mpg|mov)$))[^.]*$/ig",
     "trash": "*"
   }
 }
