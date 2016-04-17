@@ -8,10 +8,10 @@ var q = require('q');
 
 cmd
   .version('0.0.1')
-  .description('An application for collating files into predefined folders')
-  .option('-i, --initconfig', 'Initialize custom config file')
-  .option('-p, --filepath [value]','Optional filepath modifier for configuration file')
-  .option('-c, --collatepath [value]','Optional filepath modifier to start collating')
+  .description('A NodeJS command line utility to collate files into user defined folders based on user defined regular expressions.')
+  .option('-i, --initconfig', 'Initialize a custom configuration file')
+  .option('-p, --filepath [value]','Optional filepath modifier to specify where the newly created custom configuration file will be placed')
+  .option('-c, --collatepath [value]','Optional override that will specify the path to begin recursive collation.  Overrides `ROOT_SEARCH_DIR`.')
   .parse(process.argv);
 
 
