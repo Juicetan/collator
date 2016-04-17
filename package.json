@@ -1,8 +1,11 @@
 {
   "name": "collator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A NodeJS command line utility to collate files into user defined folders based on user defined regular expressions.",
   "main": "index.js",
+  "bin": {
+    "collator": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

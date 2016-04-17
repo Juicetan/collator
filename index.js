@@ -7,7 +7,7 @@ var fs = require('fs');
 var q = require('q');
 
 cmd
-  .version('0.0.1')
+  .version('0.0.2')
   .description('A NodeJS command line utility to collate files into user defined folders based on user defined regular expressions.')
   .option('-i, --initconfig', 'Initialize a custom configuration file')
   .option('-p, --filepath [value]','Optional filepath modifier to specify where the newly created custom configuration file will be placed')
