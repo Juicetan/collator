@@ -11,5 +11,6 @@
   "FILTERS": {
     "dest": "^(?!.*sample)(.*\\.((mkv|avi|mp4|mpeg|mpg|mov)$))[^.]*$",
     "trash": "*"
-  }
+  },
+  "VIDEORENAME": true
 }
