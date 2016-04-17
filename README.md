@@ -8,40 +8,40 @@ To accommodate various requirements when collating files, whether it be a form o
 ##Getting Started
 
 1. Install the utility
-```shell
-$ npm install collator -g
-```
+  ```shell
+  $ npm install collator -g
+  ```
 This will install the utility in the global namespace for you to use in any directory.
 
 2. Setup configuration
 The utility has a default configuration however you'll probably want to configure your own.  The below will initialize a configuration file in current directory:
-```shell
-$ collator -i -p .
-```
+  ```shell
+  $ collator -i -p .
+  ```
 Here is an example of a configuration file:
-```javascript
-{
-  "ROOT_SEARCH_DIR":".",
-  "DESTINATION_DIRS": {
-    "dest": "./completed",
-    "trash": "./trash"
-  },
-  "PATH_EXCLUSIONS": [
-    "./incomplete",
-    "./NZBs"
-  ],
-  "FILTERS": {
-    "dest": "^(?!.*sample)(.*\\.((mkv|avi|mp4|mpeg|mpg|mov)$))[^.]*$",
-    "trash": "*"
-  },
-  "VIDEORENAME": true
-}
-```
+  ```javascript
+  {
+    "ROOT_SEARCH_DIR":".",
+    "DESTINATION_DIRS": {
+      "dest": "./completed",
+      "trash": "./trash"
+    },
+    "PATH_EXCLUSIONS": [
+      "./incomplete",
+      "./NZBs"
+    ],
+    "FILTERS": {
+      "dest": "^(?!.*sample)(.*\\.((mkv|avi|mp4|mpeg|mpg|mov)$))[^.]*$",
+      "trash": "*"
+    },
+    "VIDEORENAME": true
+  }
+  ```
 
 3. Run the utility
-```shell
-$ collator
-```
+  ```shell
+  $ collator
+  ```
 This will run the utility and begin recursively filtering files starting at the `ROOT_SEARCH_DIR`.
 
 ##Options
