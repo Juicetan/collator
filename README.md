@@ -56,8 +56,8 @@ This will run the utility and begin recursively filtering files starting at the 
 ##Configuration Parameters
 | Name | Example | Description |
 | ---- | ------- | ----------- |
-| ROOT_SEARCH_DIR | ``./root` | A root filepath where recursive collation will begin. |
-| DESTINATION_DIRS | `{"dest": "./completed"}`` | Key-value pairs specifying a particular destination filepath for a collated file.  Keys must map to a corresponding regular expression mapped in `FILTERS`. |
+| ROOT_SEARCH_DIR | `./root` | A root filepath where recursive collation will begin. |
+| DESTINATION_DIRS | `{"dest": "./completed"}` | Key-value pairs specifying a particular destination filepath for a collated file.  Keys must map to a corresponding regular expression mapped in `FILTERS`. |
 | FILTERS | <code>{"dest": "^(?!.*sample)(.*\.((mkv&#124;avi&#124;mp4&#124;mpeg&#124;mpg&#124;mov)&#x24;))[^.]*&#x24;"}</code> | Key-value pairs specifying regular expressions to match files.  Note that a `*` value is used to denote a key that will correspond to a key-value pair in `DESTINATION_DIRS` used to throw files that do not match to any other defined regular expression. |
 | PATH_EXCLUSIONS | `["./incomplete",]` | An array of directory filepaths to ignore while recursively collating |
 | VIDEORENAME | `true` | A boolean flag to enable the renaming of files that match a regular expression but have no TV season episode format ie. s01e02 and does not contain the first 5 characters of its parent folder name.  This is for a specific usecase and will be later genericized.  |
