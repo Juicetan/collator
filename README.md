@@ -5,6 +5,8 @@ This utility can be configured to sort whatever files into whichever folders you
 
 To accommodate various requirements when collating files, whether it be a form of filename or file extension this utility allows for filtering based on regular expressions.
 
+<a href="https://nodei.co/npm/collator/"><img src="https://nodei.co/npm/collator.png?downloads=true&downloadRank=true&stars=true"></a>
+
 ##Getting Started
 
 1. Install the utility
