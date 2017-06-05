@@ -46,7 +46,8 @@ Here is an example of a configuration file:
   ```
 This will run the utility and begin recursively filtering files starting at the `ROOT_SEARCH_DIR`.
 
-##Options
+## Options
+
 | Name | Description |
 | ---- | ----------- |
 | -i, --initconfig | Initialize a custom configuration file |
@@ -55,7 +56,8 @@ This will run the utility and begin recursively filtering files starting at the 
 | -h, --help | Output usage information |
 | -V, --version | Output the version number |
 
-##Configuration Parameters
+## Configuration Parameters
+
 | Name | Example | Description |
 | ---- | ------- | ----------- |
 | ROOT_SEARCH_DIR | `./root` | A root filepath where recursive collation will begin. |
